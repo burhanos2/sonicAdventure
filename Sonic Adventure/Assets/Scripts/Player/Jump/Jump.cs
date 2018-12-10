@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour {
+public class Jump : MonoBehaviour
+{
+    [SerializeField]
+    private KeyCode jumpKey = KeyCode.Space;
 
     [SerializeField]
-    private KeyCode jumpButton = KeyCode.Space;
+    private float jumpForce = 2;
 
-    [SerializeField]
-    private float jumpForce, jumpTime;
-
-    [SerializeField]
-    private LayerMask whatIsGround;
-
+    private const float jumpTime = 1;
+   
     private float jumpTimeCounter;
 
-    private bool isGrounded = true, isJumping = false;
+    private bool isJumping = false;
 
     private Rigidbody rb;
+
+    private GroundedCheck groundCheck;
 
 	private void Start ()
     {
         rb = this.GetComponent<Rigidbody>();
+        groundCheck = GetComponent<GroundedCheck>();
 	}
 	
-	
-	private void Update ()
+	private void FixedUpdate ()
     {
         DoJump();
 	}
@@ -37,10 +38,35 @@ public class Jump : MonoBehaviour {
 
     private void DoJump()
     {
-        if (Input.GetKey(jumpButton))
+        if (groundCheck.Grounded == true && Input.GetKeyDown(jumpKey))
         {
-            rb.AddForce(Vector3.up*jumpForce, ForceMode.Impulse);
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
+            rb.velocity = transform.up * jumpForce;
+        }
+
+        if (Input.GetKey(jumpKey) && isJumping == true)
+        {
+
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = transform.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+
+        }
+
+        if (Input.GetKeyUp(jumpKey))
+        {
+            isJumping = false;
         }
     }
+
+    public bool Jumping
+    { get { return isJumping; } }
 
 }
