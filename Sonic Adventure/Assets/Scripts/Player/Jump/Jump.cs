@@ -15,6 +15,7 @@ public class Jump : MonoBehaviour
     private float jumpTimeCounter;
 
     private bool isJumping = false;
+    public bool Jumping { get { return isJumping; } }
 
     private Rigidbody rb;
 
@@ -38,6 +39,11 @@ public class Jump : MonoBehaviour
 
     private void DoJump()
     {
+        if (Input.GetKeyUp(jumpKey))
+        {
+            isJumping = false;
+        }
+
         if (groundCheck.Grounded == true && Input.GetKeyDown(jumpKey))
         {
             isJumping = true;
@@ -59,14 +65,5 @@ public class Jump : MonoBehaviour
             }
 
         }
-
-        if (Input.GetKeyUp(jumpKey))
-        {
-            isJumping = false;
-        }
     }
-
-    public bool Jumping
-    { get { return isJumping; } }
-
 }
