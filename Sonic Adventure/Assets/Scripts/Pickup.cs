@@ -18,10 +18,10 @@ public class Pickup : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             count = count + 1;
             SetRings();
-            Debug.Log(count);
+            //Debug.Log(count);
         }
     }
 
@@ -32,6 +32,6 @@ public class Pickup : MonoBehaviour {
 
     void SetRings()
     {
-        RingsAmount.text = "Rings: " + count.ToString();
+        RingsAmount.text = "Rings: " + count.ToString("000");
     }
 }
