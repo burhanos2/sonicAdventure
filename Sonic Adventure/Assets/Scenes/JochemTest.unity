@@ -294,9 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1336284008}
-  maxSpeed: 3
   movementSpeed: 1
-  stopSpeed: 3.5
 --- !u!114 &1336284010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +494,7 @@ MonoBehaviour:
   rb: {fileID: 1336284008}
   player: {fileID: 1336284007}
   audioFile: {fileID: 1836144903}
-  boostPower: 100
+  boostPower: 1
 --- !u!82 &1836144903
 AudioSource:
   m_ObjectHideFlags: 0
