@@ -29,19 +29,19 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(Camera.main.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(this.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(-Camera.main.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(-this.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-Camera.main.transform.right * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(-this.transform.right * movementSpeed * 10, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(Camera.main.transform.right * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(this.transform.right * movementSpeed * 10, ForceMode.Acceleration);
         }
     }
 
