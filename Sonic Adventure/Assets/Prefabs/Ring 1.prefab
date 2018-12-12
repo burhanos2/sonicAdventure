@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23095780913056464}
   - component: {fileID: 65428534027485274}
   - component: {fileID: 114697520893383934}
-  - component: {fileID: 114947986431188344}
   - component: {fileID: 54857432267331034}
   m_Layer: 0
   m_Name: Ring 1
@@ -125,16 +124,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3770c7b0ae27d8846a992c9ee17fd86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114947986431188344
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1540482109925280}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd28bf7e5c76c94c8f64e4c7046f7c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RingsAmount: {fileID: 0}
-  RingPick: {fileID: 0}
