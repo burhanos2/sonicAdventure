@@ -39,10 +39,6 @@ public class Jump : MonoBehaviour
 
     private void DoJump()
     {
-        if (Input.GetKeyUp(jumpKey))
-        {
-            isJumping = false;
-        }
 
         if (groundCheck.Grounded == true && Input.GetKeyDown(jumpKey))
         {
@@ -50,8 +46,7 @@ public class Jump : MonoBehaviour
             jumpTimeCounter = jumpTime;
             rb.velocity = transform.up * jumpForce;
         }
-
-        if (Input.GetKey(jumpKey) && isJumping == true)
+        else if (Input.GetKey(jumpKey) && isJumping == true)
         {
 
             if (jumpTimeCounter > 0)
@@ -64,6 +59,11 @@ public class Jump : MonoBehaviour
                 isJumping = false;
             }
 
+        }
+
+        if (Input.GetKeyUp(jumpKey))
+        {
+            isJumping = false;
         }
     }
 }
