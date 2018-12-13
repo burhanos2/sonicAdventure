@@ -19,7 +19,7 @@ public class Booster : MonoBehaviour {
 
     private void OnTriggerEnter(Collider playerCollider)
     {
-        rb.AddForce(player.forward * (boostPower * 100), ForceMode.VelocityChange);
+        rb.AddForce(this.transform.forward * (boostPower * 100), ForceMode.VelocityChange);
         audioFile.Play(0);
     }
     
