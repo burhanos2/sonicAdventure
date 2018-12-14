@@ -4,17 +4,19 @@ using System.Collections;
 public class PlayerDamage : MonoBehaviour
 {
     public Rigidbody playerRB;
-
+    private Pickup pickup;
 
     private void Awake()
     {
+        pickup = GetComponent<Pickup>();
         playerRB = GetComponent<Rigidbody>();
     }
 
     void OnDamage()
     {
-        LoseRings();
-        AddKnockback(2);
+        //LoseRings(pickup.count);
+        Ringloss();
+        AddKnockback(playerRB, -2, 2);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -26,14 +28,44 @@ public class PlayerDamage : MonoBehaviour
         
     }
 
-    private void LoseRings()
+    public void AddKnockback(Rigidbody name, float range, float upValue)
     {
-
+        name.AddForce(transform.forward * range, ForceMode.Impulse);
+        name.AddForce(transform.up * upValue, ForceMode.Impulse);
     }
 
-    private void AddKnockback(float range)
+/*    private void LoseRings(int amount)
     {
-        playerRB.AddForce(-transform.forward * range, ForceMode.Impulse);
-        playerRB.AddForce(transform.up * range, ForceMode.Impulse);
+        float oldAngle = 0;
+        float newAngle = oldAngle;
+        if (amount != 0)
+        {
+            oldAngle = 360 / amount;
+
+            for (int i = 0; i < amount; i++)
+            {
+                newAngle += oldAngle;
+                this.gameObject.transform.Rotate(0, 0, newAngle);
+                AddKnockback(GetComponent<Rigidbody>(), 0.5f, 0.33f);
+            }
+
+        }
+        else { Debug.Log("Player is dead"); return; }
+
+
+    } */
+
+    private void Ringloss()
+    {
+        if (pickup.count <= 20) {
+            pickup.count -= pickup.count ;
+            pickup.SetRings();
+
+        } else {
+
+            pickup.count -= pickup.count;
+            pickup.SetRings();
+        }
+
     }
 }

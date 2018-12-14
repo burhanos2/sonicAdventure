@@ -6,7 +6,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour {
 
     public Text RingsAmount;
-    private int count;
+    public int count;
     public AudioSource RingPick;
 
 	// Use this for initialization
@@ -28,8 +28,8 @@ public class Pickup : MonoBehaviour {
         }
     }
 
-    void SetRings()
+    public void SetRings()
     {
-        RingsAmount.text = "Rings: " + count.ToString("000");
+        RingsAmount.text = "Rings: " + count;
     }
 }
