@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class GroundedCheck : MonoBehaviour
 {
-    private LayerMask GroundMask;
+    protected LayerMask GroundMask;
 
-    private const float CheckHeight = 0.85f;
+    protected const float CheckHeight = 0.85f;
 
     private bool _isGrounded;
     public bool Grounded {   get { return _isGrounded; }   }
 
-    void Start()
+    void Awake()
     {
         GroundMask = LayerMask.GetMask("Ground");
     }
