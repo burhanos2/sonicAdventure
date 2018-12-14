@@ -44,14 +44,14 @@ public class Jump : MonoBehaviour
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
-            rb.velocity = transform.up * jumpForce;
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce * 2f, rb.velocity.z);
         }
         else if (Input.GetKey(jumpKey) && isJumping == true)
         {
 
             if (jumpTimeCounter > 0)
             {
-                rb.velocity = transform.up * jumpForce;
+                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
                 jumpTimeCounter -= Time.deltaTime;
             }
             else

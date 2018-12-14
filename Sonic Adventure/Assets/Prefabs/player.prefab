@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 32
-  jumpForce: 2
+  jumpForce: 4
 --- !u!114 &114514531194263630
 MonoBehaviour:
   m_ObjectHideFlags: 1
