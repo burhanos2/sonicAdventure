@@ -5,18 +5,16 @@ using UnityEngine;
 public class DisposibleRing : MonoBehaviour {
     [SerializeField]
     private float timer = 1;
+    private float timer2 = 0.25f;
 
     public Material mat;
     public Material mat2;
-
-
 
     public Collider collideRing;
     public GameObject playerObject;
     public Collider playerCollider;
     private bool requireTimer;
     private bool blinktimer;
-    private float timer2 = 0.25f;
 
 
     void UpdateTimer()
@@ -61,14 +59,11 @@ public class DisposibleRing : MonoBehaviour {
             {
                 gameObject.GetComponent<Renderer>().material = mat2;
                 timer2 = 0.25f;
-
             }
             else
             {
-
                 gameObject.GetComponent<Renderer>().material = mat;
             }
-
         }
     }
 }
