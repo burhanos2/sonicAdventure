@@ -36,7 +36,7 @@ public class PlayerDeath : MonoBehaviour
         }
     }
     // Death 
-    private void Death()
+    /*private void Death()
     {
         if (amount)
         {
@@ -44,7 +44,7 @@ public class PlayerDeath : MonoBehaviour
         }
         anim.Play("Death");
         playerDeath = true;
-    }
+    }*/
 }
 
 
