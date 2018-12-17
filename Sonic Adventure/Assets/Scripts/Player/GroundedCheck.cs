@@ -6,7 +6,7 @@ public class GroundedCheck : MonoBehaviour
 {
     protected LayerMask GroundMask;
 
-    protected const float CheckHeight = 0.85f;
+    protected const float CheckHeight = 0.7f;
 
     private bool _isGrounded;
     public bool Grounded {   get { return _isGrounded; }   }
