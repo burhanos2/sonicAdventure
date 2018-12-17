@@ -8,7 +8,7 @@ public class Pickup : MonoBehaviour {
     public Text RingsAmount;
     public int count;
     public AudioSource ringPick;
-    public AudioClip pickSound;
+    private AudioClip pickSound;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +31,6 @@ public class Pickup : MonoBehaviour {
 
     public void SetRings()
     {
-        RingsAmount.text = "Rings: " + count;
+        RingsAmount.text = "" + count;
     }
 }
