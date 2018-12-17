@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeath : MonoBehaviour {
+public class PlayerDeath : MonoBehaviour
+{
 
     private Animator anim;
     private bool playerDeath = false;
@@ -12,7 +13,8 @@ public class PlayerDeath : MonoBehaviour {
                    cam2;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         anim = GetComponent<Animator>();
 
         cam1.enabled = true;
@@ -36,10 +38,14 @@ public class PlayerDeath : MonoBehaviour {
     // Death 
     private void Death()
     {
+        if (amount)
+        {
+
+        }
         anim.Play("Death");
         playerDeath = true;
     }
 }
- 
 
- 
+
+

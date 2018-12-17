@@ -7,20 +7,21 @@ public class Pickup : MonoBehaviour {
 
     public Text RingsAmount;
     public int count;
-    public AudioSource RingPick;
+    public AudioSource ringPick;
+    public AudioClip pickSound;
 
 	// Use this for initialization
 	void Start () {
         count = 0;
         SetRings();
-        RingPick.GetComponent<AudioSource>();
+        ringPick.GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            RingPick.Play(0);
+            ringPick.PlayOneShot(pickSound);
             Destroy(other.gameObject);
             count = count + 1;
             SetRings();
