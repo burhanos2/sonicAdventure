@@ -5,6 +5,7 @@ using UnityEngine;
 public class GroundedCheck : MonoBehaviour
 {
     protected LayerMask GroundMask;
+    public Vector3 vectorOffset = new Vector3(0,0,0.12f);
 
     protected const float CheckHeight = 0.7f;
 
@@ -18,9 +19,9 @@ public class GroundedCheck : MonoBehaviour
 
     void Update()
     {
-        Debug.DrawRay(transform.localPosition, -transform.up * CheckHeight,Color.cyan , 0f);
+        Debug.DrawRay(transform.localPosition + vectorOffset, -transform.up * CheckHeight,Color.cyan , 0f);
         //
-        if (Physics.Raycast(transform.localPosition, -transform.up, CheckHeight, GroundMask))
+        if (Physics.Raycast(transform.localPosition + vectorOffset, -transform.up, CheckHeight, GroundMask))
         {
             if (_isGrounded == false)
             {

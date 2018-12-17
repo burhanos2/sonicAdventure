@@ -7,6 +7,11 @@ public class PlayerDamage : MonoBehaviour
     private Pickup pickup;
     private SceneHandler sceneHandler;
 
+    private bool invinstime = true;
+    public Collider playerCollider2;
+    public Collider spikecol;
+    public float timer3 = 2;
+
     private void Awake()
     {
         pickup = GetComponent<Pickup>();
@@ -25,6 +30,8 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Spike")
         {
+          invinstime = false;
+          Physics.IgnoreCollision(playerCollider2, spikecol, ignore: true);
             OnDamage(-2, 2);
         }
 
@@ -33,7 +40,7 @@ public class PlayerDamage : MonoBehaviour
             OnDamage(0, 0);
             RespawnSonic();
         }
-        
+
     }
 
     private void RespawnSonic()
@@ -49,7 +56,7 @@ public class PlayerDamage : MonoBehaviour
     }
 
 /*    Dit stuk is voor het fancy ring drop effect wat te veel moeite was voor iets dat niet in de 10sec clip zat.
-     
+
      private void LoseRings(int amount)
     {
         float oldAngle = 0;
@@ -79,6 +86,18 @@ public class PlayerDamage : MonoBehaviour
         if (pickup.count < 0)
         {
             pickup.count = 0;
+        }
+    }
+
+    public void Invinstimer()
+    {
+        if (invinstime == false)
+            timer3 -= 1 * Time.deltaTime;
+        if (timer3 <= 0)
+        {
+            Physics.IgnoreCollision(playerCollider2, spikecol, ignore: false);
+            invinstime = true;
+            timer3 = 2;
         }
     }
 }
