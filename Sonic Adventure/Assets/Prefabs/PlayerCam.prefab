@@ -100,4 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6d700416b65a94f9319c2f9b1023ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 4810063486219196, guid: dc7d5491eff657a4690a94f7d1cd5ff1, type: 2}
+  _target: {fileID: 0}
+  _offset: {x: 2, y: 3, z: -3}
+  _rotationOffset: {x: 3, y: 0, z: 0, w: 0}

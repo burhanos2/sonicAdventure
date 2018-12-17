@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public Rigidbody rb;
 
-    private float maxSpeed = 3;
+    private float maxSpeed = 3f;
     public float movementSpeed;
     private float stopSpeed = 3.5f;
 
@@ -29,19 +29,19 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(this.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(this.transform.forward * movementSpeed * 6, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(-this.transform.forward * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(-this.transform.forward * movementSpeed * 6, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-this.transform.right * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(-this.transform.right * movementSpeed * 6, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(this.transform.right * movementSpeed * 10, ForceMode.Acceleration);
+            rb.AddForce(this.transform.right * movementSpeed * 6, ForceMode.Acceleration);
         }
     }
 
