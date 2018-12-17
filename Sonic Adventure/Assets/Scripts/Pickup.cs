@@ -31,6 +31,6 @@ public class Pickup : MonoBehaviour {
 
     public void SetRings()
     {
-        RingsAmount.text = "Rings: " + count;
+        RingsAmount.text = "" + count;
     }
 }

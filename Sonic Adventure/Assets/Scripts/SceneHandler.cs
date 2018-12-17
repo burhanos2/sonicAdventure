@@ -2,17 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class SceneHandler {
+public class SceneHandler : MonoBehaviour{
+
+    private Animator anim;
+    private Image blackImage;
 
     public void SwitchSceneSingle(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        StartCoroutine(SingleFade(sceneName));
         return;
     }
     public void SwitchSceneMultiple(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        StartCoroutine(MultipleFade(sceneName));
         return;
+    }
+
+    private IEnumerator SingleFade(string sceneName)
+    {
+        anim.SetBool("Fade", true);
+        yield return new WaitUntil(() => blackImage.color.a == 1);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
+    private IEnumerator MultipleFade(string sceneName)
+    {
+        anim.SetBool("Fade", true);
+        yield return new WaitUntil(() => blackImage.color.a == 1);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
     }
 }

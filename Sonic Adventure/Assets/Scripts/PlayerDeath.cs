@@ -36,11 +36,11 @@ public class PlayerDeath : MonoBehaviour
         }
     }
     // Death 
-    private void Death()
+    /*private void Death()
     {
         anim.Play("Death");
         playerDeath = true;
-    }
+    }*/
 }
 
 
