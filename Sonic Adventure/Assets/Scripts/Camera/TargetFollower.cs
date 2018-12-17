@@ -6,18 +6,20 @@ public class TargetFollower : MonoBehaviour
 {
     [SerializeField]
     private Transform _target;
+    private Vector3 followPlayer;
 
     [SerializeField]
     private Vector3 _offset;
     public Vector3 Offset{ get; set; }
 
-    [SerializeField]
-    private Quaternion _rotationOffset;
-    public Quaternion RotationOffset { get; set; }
 
-	private void Update()
+    private void Update()
+    {
+        followPlayer = _target.position + _offset;
+    }
+
+    private void LateUpdate()
 	{
-        transform.position = _target.position + _offset;
-      //  transform.rotation = Quaternion.RotateTowards(transform.rotation, _target.transform.rotation, 2f);
-	}
+        transform.LookAt(_target);
+    }
 }
