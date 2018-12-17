@@ -45,7 +45,8 @@ public class PlayerDamage : MonoBehaviour
 
     private void RespawnSonic()
     {
-        sceneHandler.SwitchSceneSingle("Main");
+        Debug.Log("HI");
+        sceneHandler.SwitchSceneSingle("JochemTest");
     }
 
     public void AddKnockback(Rigidbody name, float range, float upValue)
