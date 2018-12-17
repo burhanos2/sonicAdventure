@@ -13,7 +13,9 @@ public class DisposibleRing : MonoBehaviour {
     public Collider collideRing;
     public GameObject playerObject;
     public Collider playerCollider;
+    public Collider spikecol;
     private bool requireTimer;
+    
     private bool blinktimer;
 
 
@@ -50,7 +52,7 @@ public class DisposibleRing : MonoBehaviour {
         ColorSwitch();
     }
 
-    private void ColorSwitch()
+    public void ColorSwitch()
     {
         if (blinktimer == true)
         {

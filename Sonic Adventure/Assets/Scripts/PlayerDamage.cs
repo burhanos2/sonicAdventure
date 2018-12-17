@@ -6,10 +6,20 @@ public class PlayerDamage : MonoBehaviour
     public Rigidbody playerRB;
     private Pickup pickup;
 
+    private bool invinstime = true;
+    public Collider playerCollider2;
+    public Collider spikecol;
+    public float timer3 = 2;
+
     private void Awake()
     {
         pickup = GetComponent<Pickup>();
         playerRB = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        Invinstimer();
     }
 
     void OnDamage()
@@ -17,13 +27,18 @@ public class PlayerDamage : MonoBehaviour
         //LoseRings(pickup.count);
         Ringloss();
         AddKnockback(playerRB, -2, 2);
+        Invinstimer();
+
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Spike")
         {
+            invinstime = false;
+            Physics.IgnoreCollision(playerCollider2, spikecol, ignore: true);
             OnDamage();
+            
         }
         
     }
@@ -67,5 +82,17 @@ public class PlayerDamage : MonoBehaviour
             pickup.SetRings();
         }
 
+    }
+
+    public void Invinstimer()
+    {
+        if (invinstime == false)
+            timer3 -= 1 * Time.deltaTime;
+        if (timer3 <= 0)
+        {
+            Physics.IgnoreCollision(playerCollider2, spikecol, ignore: false);
+            invinstime = true;
+            timer3 = 2;
+        }
     }
 }
