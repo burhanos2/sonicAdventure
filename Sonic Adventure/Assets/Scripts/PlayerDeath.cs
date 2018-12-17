@@ -38,10 +38,6 @@ public class PlayerDeath : MonoBehaviour
     // Death 
     /*private void Death()
     {
-        if (amount)
-        {
-
-        }
         anim.Play("Death");
         playerDeath = true;
     }*/
