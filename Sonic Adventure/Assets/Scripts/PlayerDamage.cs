@@ -6,17 +6,18 @@ public class PlayerDamage : MonoBehaviour
     public Rigidbody playerRB;
     private Pickup pickup;
     private SceneHandler sceneHandler;
+    public GameObject managerObject;
 
     private bool invinstime = true;
-    public Collider playerCollider2;
+    public Collider playerCollider;
     public Collider spikecol;
-    public float timer3 = 2;
+    private float timer3 = 2;
 
     private void Awake()
     {
         pickup = GetComponent<Pickup>();
         playerRB = GetComponent<Rigidbody>();
-        sceneHandler = GetComponent<SceneHandler>();
+        sceneHandler = managerObject.GetComponent<SceneHandler>();
     }
 
     void OnDamage(float horizontalKB, float verticalKB)
@@ -31,7 +32,7 @@ public class PlayerDamage : MonoBehaviour
         if (other.gameObject.tag == "Spike")
         {
           invinstime = false;
-          Physics.IgnoreCollision(playerCollider2, spikecol, ignore: true);
+          Physics.IgnoreCollision(playerCollider, spikecol, ignore: true);
             OnDamage(-2, 2);
         }
 
@@ -45,7 +46,6 @@ public class PlayerDamage : MonoBehaviour
 
     private void RespawnSonic()
     {
-        Debug.Log("HI");
         sceneHandler.SwitchSceneSingle("JochemTest");
     }
 
@@ -95,7 +95,7 @@ public class PlayerDamage : MonoBehaviour
             timer3 -= 1 * Time.deltaTime;
         if (timer3 <= 0)
         {
-            Physics.IgnoreCollision(playerCollider2, spikecol, ignore: false);
+            Physics.IgnoreCollision(playerCollider, spikecol, ignore: false);
             invinstime = true;
             timer3 = 2;
         }

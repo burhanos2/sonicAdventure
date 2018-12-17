@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class SceneHandler : MonoBehaviour{
 
-    private Animator anim;
-    private Image blackImage;
+    public Animator anim;
+    public Image blackImage;
 
     public void SwitchSceneSingle(string sceneName)
     {
