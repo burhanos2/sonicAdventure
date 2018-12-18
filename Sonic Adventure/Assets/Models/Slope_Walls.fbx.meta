@@ -1,16 +1,20 @@
 fileFormatVersion: 2
-guid: 6c65f57a8fe123243bd886dcbcc15e11
+guid: 00f0acd58ddf65846baebad4c54abc8f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Slide
-    100002: //RootNode
+    100002: Slide_walls
+    100004: //RootNode
+    100006: transform3
     400000: Slide
-    400002: //RootNode
+    400002: Slide_walls
+    400004: //RootNode
+    400006: transform3
     2100000: lambert3
-    2300000: Slide
-    3300000: Slide
-    4300000: Slide
+    2300000: Slide_walls
+    3300000: Slide_walls
+    4300000: Slide_walls
   externalObjects: {}
   materials:
     importMaterials: 1

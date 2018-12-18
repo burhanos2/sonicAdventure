@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 35fb08169b297134e8fa051a6d8e6559
+guid: b2d68fa816a3f4140b5ba49b032203da
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: C_R
+    100000: C_L
     100002: //RootNode
-    400000: C_R
+    400000: C_L
     400002: //RootNode
     2100000: lambert3
-    2300000: C_R
-    3300000: C_R
-    4300000: C_R
+    2300000: C_L
+    3300000: C_L
+    4300000: C_L
   externalObjects: {}
   materials:
     importMaterials: 1
