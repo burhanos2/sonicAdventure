@@ -1,16 +1,20 @@
 fileFormatVersion: 2
-guid: f8487f0fe62b7da47bfdf201acbbd31f
+guid: 3efe35333cbc443439679c18066c2d4f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: JUMP1
-    100002: //RootNode
-    400000: JUMP1
-    400002: //RootNode
-    2100000: lambert1
-    2300000: JUMP1
-    3300000: JUMP1
-    4300000: JUMP1
+    100000: //RootNode
+    100002: Plat
+    100004: polySurface2
+    100006: transform4
+    400000: //RootNode
+    400002: Plat
+    400004: polySurface2
+    400006: transform4
+    2100000: lambert3
+    2300000: polySurface2
+    3300000: polySurface2
+    4300000: polySurface2
   externalObjects: {}
   materials:
     importMaterials: 1

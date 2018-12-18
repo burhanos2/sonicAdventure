@@ -1,28 +1,26 @@
 fileFormatVersion: 2
-guid: dce12e2b86fd3c44695764c379f64308
+guid: b0e28ec2571315d4c987193e7c4a36d7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Pole_L
-    100004: Pole_R
-    100006: SPikes
-    100008: transform19
+    100002: pCube2
+    100004: pCube3
+    100006: pCylinder1
     400000: //RootNode
-    400002: Pole_L
-    400004: Pole_R
-    400006: SPikes
-    400008: transform19
+    400002: pCube2
+    400004: pCube3
+    400006: pCylinder1
     2100000: lambert1
-    2300000: Pole_L
-    2300002: Pole_R
-    2300004: SPikes
-    3300000: Pole_L
-    3300002: Pole_R
-    3300004: SPikes
-    4300000: Pole_L
-    4300002: SPikes
-    4300004: Pole_R
+    2300000: pCube2
+    2300002: pCube3
+    2300004: pCylinder1
+    3300000: pCube2
+    3300002: pCube3
+    3300004: pCylinder1
+    4300000: pCube2
+    4300002: pCube3
+    4300004: pCylinder1
   externalObjects: {}
   materials:
     importMaterials: 1
