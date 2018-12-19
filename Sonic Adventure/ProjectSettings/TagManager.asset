@@ -8,6 +8,7 @@ TagManager:
   - Spike
   - Water
   - CameraTrigger
+  - RotatePoint
   layers:
   - Default
   - TransparentFX
