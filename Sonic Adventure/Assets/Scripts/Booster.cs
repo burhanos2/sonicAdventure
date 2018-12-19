@@ -8,7 +8,7 @@ public class Booster : MonoBehaviour {
     public Transform player;
     public AudioSource audioFile;
 
-    private float boostPower = 1;
+    private readonly float boostPower = 1;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class Booster : MonoBehaviour {
     private void OnTriggerEnter(Collider playerCollider)
     {
         rb.AddForce(this.transform.forward * (boostPower * 100), ForceMode.VelocityChange);
-        audioFile.Play(0);
+        audioFile.Play();
     }
     
 }

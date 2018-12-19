@@ -6,35 +6,31 @@ public class PlayerAnims : MonoBehaviour {
 
     public Animator sonicAnimator;
     private PlayerMovement movementScript;
-    private Animation anim;
-    private float walkSpeed = 1.1f;
-    private float runSpeed = 2.9f;
+    private PlayerDamage playerDamage;
+
+    [HideInInspector]
+    public int damageState = 0;
 
     private void Awake()
     {
-        
+        playerDamage = GetComponent<PlayerDamage>();
         movementScript = GetComponent<PlayerMovement>();
         sonicAnimator = GetComponent<Animator>();
     }
 
-    private void AdjustAnimation() {
+    private void Update()
+    {
+        AdjustAnimation();
+    }
 
-        if (movementScript.rb.velocity.magnitude <= 0)
-        {
-            anim.Play("Idle", PlayMode.StopAll);
-        }
-        if (movementScript.rb.velocity.magnitude > 0 && movementScript.rb.velocity.magnitude < walkSpeed)
-        {
-            anim.Play("Walk", PlayMode.StopAll);
-        }
-        if (movementScript.rb.velocity.magnitude > runSpeed)
-        {
-            anim.Play("Run", PlayMode.StopAll);
-        }
+    private void AdjustAnimation() {
+        sonicAnimator.SetFloat("movementSpeed", movementScript.rb.velocity.magnitude);
+        sonicAnimator.SetInteger("damageState", damageState);
     }
 
     public void DamageAnimation()
     {
-        anim.Play("Hit", PlayMode.StopAll);
+        playerDamage.invinstime = false;
+        damageState = 1;
     }
 }

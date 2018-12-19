@@ -11,7 +11,8 @@ public class PlayerDamage : MonoBehaviour
     public Collider playerCollider;
     public Collider spikecol;
 
-    private bool invinstime = true;
+    [HideInInspector]
+    public bool invinstime = true;
     private float timer3 = 2;
 
     private void Awake()
@@ -34,22 +35,23 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Spike")
         {
+          playerRB.velocity = Vector3.zero;
           invinstime = false;
           Physics.IgnoreCollision(playerCollider, spikecol, ignore: true);
-            OnDamage(-2, 2);
+          OnDamage(-2, 2);
         }
 
         if (other.gameObject.tag == "Water")
         {
             OnDamage(0, 0);
-            RespawnSonic();
+            RespawnSonic("Main");
         }
 
     }
 
-    private void RespawnSonic()
+    private void RespawnSonic(string sceneName)
     {
-        sceneHandler.SwitchSceneSingle("JochemTest");
+        sceneHandler.SwitchSceneSingle(sceneName);
     }
 
     public void AddKnockback(Rigidbody name, float range, float upValue)
@@ -83,6 +85,11 @@ public class PlayerDamage : MonoBehaviour
 
     private void Ringloss()
     {
+        if (pickup.count == 0)
+        {
+            RespawnSonic("Main");
+        }
+
         pickup.count -= pickup.count;
         pickup.SetRings();
 
@@ -92,13 +99,14 @@ public class PlayerDamage : MonoBehaviour
         }
     }
 
-    public void Invinstimer()
+    private void Invinstimer()
     {
         if (invinstime == false)
             timer3 -= 1 * Time.deltaTime;
         if (timer3 <= 0)
         {
             Physics.IgnoreCollision(playerCollider, spikecol, ignore: false);
+            playerAnimations.damageState = 0;
             invinstime = true;
             timer3 = 2;
         }

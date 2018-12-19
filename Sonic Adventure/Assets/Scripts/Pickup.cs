@@ -6,6 +6,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour {
 
     public Text RingsAmount;
+    [HideInInspector]
     public int count;
     public AudioSource ringPick;
 

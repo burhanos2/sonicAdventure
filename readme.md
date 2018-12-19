@@ -13,9 +13,7 @@ Jelle
 Quincy
 Brett
 
-Dev Trello: https://trello.com/b/OxBKEHuE/vertical-slicedevs
-
-Artist Trello: https://trello.com/b/WRPi9CbF/vertical-slicearstist
+Trello: https://trello.com/verticalsonic
 
 Play: COMING
 
