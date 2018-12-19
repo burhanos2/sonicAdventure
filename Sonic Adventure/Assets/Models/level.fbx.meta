@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: fd4bb410d96f35844a2633172a39f85c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: C_L
+    100002: C_R
+    100004: group
+    100006: group4
+    100008: group5
+    100010: group6
+    100012: group7
+    100014: //RootNode
+    100016: Loop
+    100018: pasted__Enviroment
+    100020: pasted__group
+    100022: pasted__group1
+    100024: pasted__group2
+    100026: pasted__group3
+    100028: pasted__group4
+    100030: pasted__group5
+    100032: pasted__pasted__bush
+    100034: pasted__pasted__bush 1
+    100036: pasted__pasted__Gate
+    100038: pasted__pasted__group4
+    100040: pasted__pasted__pasted__bush
+    100042: pasted__pasted__pasted__bush 1
+    100044: pasted__pasted__pasted__pPlane12
+    100046: pasted__pasted__pasted__pPlane13
+    100048: pasted__pasted__pasted__pPlane14
+    100050: pasted__pasted__pasted__pPlane15
+    100052: pasted__pasted__pasted__pPlane16
+    100054: pasted__pasted__pasted__pPlane17
+    100056: pasted__pasted__pasted__pPlane18
+    100058: pasted__pasted__pasted__pPlane19
+    100060: pasted__pasted__pasted__pPlane20
+    100062: pasted__pasted__pasted__pPlane21
+    100064: pasted__pasted__pasted__pPlane22
+    100066: pasted__pasted__pasted__pPlane23
+    100068: pasted__pasted__pasted__transform1
+    100070: pasted__pasted__pasted__transform10
+    100072: pasted__pasted__pasted__transform11
+    100074: pasted__pasted__pasted__transform12
+    100076: pasted__pasted__pasted__transform2
+    100078: pasted__pasted__pasted__transform3
+    100080: pasted__pasted__pasted__transform4
+    100082: pasted__pasted__pasted__transform5
+    100084: pasted__pasted__pasted__transform6
+    100086: pasted__pasted__pasted__transform7
+    100088: pasted__pasted__pasted__transform8
+    100090: pasted__pasted__pasted__transform9
+    100092: pasted__pasted__pCylinder1
+    100094: pasted__pasted__pelm_boom
+    100096: pasted__pasted__Pole_L
+    100098: pasted__pasted__Pole_R
+    100100: pasted__pasted__pPlane1
+    100102: pasted__pasted__pPlane1 1
+    100104: pasted__pasted__pPlane10
+    100106: pasted__pasted__pPlane11
+    100108: pasted__pasted__pPlane12
+    100110: pasted__pasted__pPlane13
+    100112: pasted__pasted__pPlane14
+    100114: pasted__pasted__pPlane15
+    100116: pasted__pasted__pPlane16
+    100118: pasted__pasted__pPlane17
+    100120: pasted__pasted__pPlane18
+    100122: pasted__pasted__pPlane19
+    100124: pasted__pasted__pPlane2
+    100126: pasted__pasted__pPlane20
+    100128: pasted__pasted__pPlane21
+    100130: pasted__pasted__pPlane22
+    100132: pasted__pasted__pPlane23
+    100134: pasted__pasted__pPlane3
+    100136: pasted__pasted__pPlane4
+    100138: pasted__pasted__pPlane5
+    100140: pasted__pasted__pPlane6
+    100142: pasted__pasted__pPlane7
+    100144: pasted__pasted__pPlane8
+    100146: pasted__pasted__pPlane9
+    100148: pasted__pasted__transform1
+    100150: pasted__pasted__transform10
+    100152: pasted__pasted__transform11
+    100154: pasted__pasted__transform12
+    100156: pasted__pasted__transform2
+    100158: pasted__pasted__transform3
+    100160: pasted__pasted__transform4
+    100162: pasted__pasted__transform5
+    100164: pasted__pasted__transform6
+    100166: pasted__pasted__transform7
+    100168: pasted__pasted__transform8
+    100170: pasted__pasted__transform9
+    100172: pasted__pCube1
+    100174: pasted__pCube1 1
+    100176: pasted__pCube1 2
+    100178: pasted__pCube10
+    100180: pasted__pCube11
+    100182: pasted__pCube2
+    100184: pasted__pCube2 1
+    100186: pasted__pCube2 2
+    100188: pasted__pCube4
+    100190: pasted__pCube5
+    100192: pasted__pCube6
+    100194: pasted__pCube7
+    100196: pasted__pCube8
+    100198: pasted__pCube9
+    100200: pasted__polySurface1
+    100202: pasted__polySurface3
+    100204: pasted__polySurface4
+    100206: pasted__polySurface5
+    100208: pasted__polySurface5 1
+    100210: pasted__transform1
+    100212: pasted__transform10
+    100214: pasted__transform11
+    100216: pasted__transform12
+    100218: pasted__transform13
+    100220: pasted__transform14
+    100222: pasted__transform15
+    100224: pasted__transform16
+    100226: pasted__transform17
+    100228: pasted__transform18
+    100230: pasted__transform2
+    100232: pasted__transform3
+    100234: pasted__transform4
+    100236: pasted__transform5
+    100238: pasted__transform7
+    100240: pasted__transform8
+    100242: pasted__transform9
+    100244: pCylinder4
+    100246: Slide
+    400000: C_L
+    400002: C_R
+    400004: group
+    400006: group4
+    400008: group5
+    400010: group6
+    400012: group7
+    400014: //RootNode
+    400016: Loop
+    400018: pasted__Enviroment
+    400020: pasted__group
+    400022: pasted__group1
+    400024: pasted__group2
+    400026: pasted__group3
+    400028: pasted__group4
+    400030: pasted__group5
+    400032: pasted__pasted__bush
+    400034: pasted__pasted__bush 1
+    400036: pasted__pasted__Gate
+    400038: pasted__pasted__group4
+    400040: pasted__pasted__pasted__bush
+    400042: pasted__pasted__pasted__bush 1
+    400044: pasted__pasted__pasted__pPlane12
+    400046: pasted__pasted__pasted__pPlane13
+    400048: pasted__pasted__pasted__pPlane14
+    400050: pasted__pasted__pasted__pPlane15
+    400052: pasted__pasted__pasted__pPlane16
+    400054: pasted__pasted__pasted__pPlane17
+    400056: pasted__pasted__pasted__pPlane18
+    400058: pasted__pasted__pasted__pPlane19
+    400060: pasted__pasted__pasted__pPlane20
+    400062: pasted__pasted__pasted__pPlane21
+    400064: pasted__pasted__pasted__pPlane22
+    400066: pasted__pasted__pasted__pPlane23
+    400068: pasted__pasted__pasted__transform1
+    400070: pasted__pasted__pasted__transform10
+    400072: pasted__pasted__pasted__transform11
+    400074: pasted__pasted__pasted__transform12
+    400076: pasted__pasted__pasted__transform2
+    400078: pasted__pasted__pasted__transform3
+    400080: pasted__pasted__pasted__transform4
+    400082: pasted__pasted__pasted__transform5
+    400084: pasted__pasted__pasted__transform6
+    400086: pasted__pasted__pasted__transform7
+    400088: pasted__pasted__pasted__transform8
+    400090: pasted__pasted__pasted__transform9
+    400092: pasted__pasted__pCylinder1
+    400094: pasted__pasted__pelm_boom
+    400096: pasted__pasted__Pole_L
+    400098: pasted__pasted__Pole_R
+    400100: pasted__pasted__pPlane1
+    400102: pasted__pasted__pPlane1 1
+    400104: pasted__pasted__pPlane10
+    400106: pasted__pasted__pPlane11
+    400108: pasted__pasted__pPlane12
+    400110: pasted__pasted__pPlane13
+    400112: pasted__pasted__pPlane14
+    400114: pasted__pasted__pPlane15
+    400116: pasted__pasted__pPlane16
+    400118: pasted__pasted__pPlane17
+    400120: pasted__pasted__pPlane18
+    400122: pasted__pasted__pPlane19
+    400124: pasted__pasted__pPlane2
+    400126: pasted__pasted__pPlane20
+    400128: pasted__pasted__pPlane21
+    400130: pasted__pasted__pPlane22
+    400132: pasted__pasted__pPlane23
+    400134: pasted__pasted__pPlane3
+    400136: pasted__pasted__pPlane4
+    400138: pasted__pasted__pPlane5
+    400140: pasted__pasted__pPlane6
+    400142: pasted__pasted__pPlane7
+    400144: pasted__pasted__pPlane8
+    400146: pasted__pasted__pPlane9
+    400148: pasted__pasted__transform1
+    400150: pasted__pasted__transform10
+    400152: pasted__pasted__transform11
+    400154: pasted__pasted__transform12
+    400156: pasted__pasted__transform2
+    400158: pasted__pasted__transform3
+    400160: pasted__pasted__transform4
+    400162: pasted__pasted__transform5
+    400164: pasted__pasted__transform6
+    400166: pasted__pasted__transform7
+    400168: pasted__pasted__transform8
+    400170: pasted__pasted__transform9
+    400172: pasted__pCube1
+    400174: pasted__pCube1 1
+    400176: pasted__pCube1 2
+    400178: pasted__pCube10
+    400180: pasted__pCube11
+    400182: pasted__pCube2
+    400184: pasted__pCube2 1
+    400186: pasted__pCube2 2
+    400188: pasted__pCube4
+    400190: pasted__pCube5
+    400192: pasted__pCube6
+    400194: pasted__pCube7
+    400196: pasted__pCube8
+    400198: pasted__pCube9
+    400200: pasted__polySurface1
+    400202: pasted__polySurface3
+    400204: pasted__polySurface4
+    400206: pasted__polySurface5
+    400208: pasted__polySurface5 1
+    400210: pasted__transform1
+    400212: pasted__transform10
+    400214: pasted__transform11
+    400216: pasted__transform12
+    400218: pasted__transform13
+    400220: pasted__transform14
+    400222: pasted__transform15
+    400224: pasted__transform16
+    400226: pasted__transform17
+    400228: pasted__transform18
+    400230: pasted__transform2
+    400232: pasted__transform3
+    400234: pasted__transform4
+    400236: pasted__transform5
+    400238: pasted__transform7
+    400240: pasted__transform8
+    400242: pasted__transform9
+    400244: pCylinder4
+    400246: Slide
+    2100000: lambert11
+    2100002: lambert10
+    2100004: lambert13
+    2100006: lambert14
+    2100008: lambert9
+    2100010: pasted__lambert3
+    2100012: pasted__pasted__lambert19
+    2100014: pasted__pasted__lambert21
+    2100016: pasted__pasted__lambert18
+    2100018: pasted__pasted__lambert23
+    2100020: pasted__pasted__lambert24
+    2100022: pasted__pasted__lambert26
+    2100024: pasted__pasted__pasted__lambert26
+    2100026: lambert26
+    2100028: lambert1
+    2300000: C_L
+    2300002: C_R
+    2300004: Loop
+    2300006: pasted__group2
+    2300008: pasted__pasted__bush 1
+    2300010: pasted__pasted__pasted__bush 1
+    2300012: pasted__pasted__Pole_L
+    2300014: pasted__pasted__Pole_R
+    2300016: pasted__pCube1
+    2300018: pasted__pCube1 1
+    2300020: pasted__pCube1 2
+    2300022: pasted__pCube10
+    2300024: pasted__pCube11
+    2300026: pasted__pCube2
+    2300028: pasted__pCube2 1
+    2300030: pasted__pCube2 2
+    2300032: pasted__pCube4
+    2300034: pasted__pCube5
+    2300036: pasted__pCube6
+    2300038: pasted__pCube7
+    2300040: pasted__pCube8
+    2300042: pasted__pCube9
+    2300044: pasted__polySurface5
+    2300046: pCylinder4
+    2300048: Slide
+    3300000: C_L
+    3300002: C_R
+    3300004: Loop
+    3300006: pasted__group2
+    3300008: pasted__pasted__bush 1
+    3300010: pasted__pasted__pasted__bush 1
+    3300012: pasted__pasted__Pole_L
+    3300014: pasted__pasted__Pole_R
+    3300016: pasted__pCube1
+    3300018: pasted__pCube1 1
+    3300020: pasted__pCube1 2
+    3300022: pasted__pCube10
+    3300024: pasted__pCube11
+    3300026: pasted__pCube2
+    3300028: pasted__pCube2 1
+    3300030: pasted__pCube2 2
+    3300032: pasted__pCube4
+    3300034: pasted__pCube5
+    3300036: pasted__pCube6
+    3300038: pasted__pCube7
+    3300040: pasted__pCube8
+    3300042: pasted__pCube9
+    3300044: pasted__polySurface5
+    3300046: pCylinder4
+    3300048: Slide
+    4300000: C_R
+    4300002: C_L
+    4300004: Slide
+    4300006: Loop
+    4300008: pCylinder4
+    4300010: pasted__polySurface5
+    4300012: pasted__group2
+    4300014: pasted__pasted__Pole_L
+    4300016: pasted__pasted__Pole_R
+    4300018: pasted__pasted__bush
+    4300020: pasted__pasted__pasted__bush
+    4300022: pasted__pCube4
+    4300024: pasted__pCube5
+    4300026: pasted__pCube6
+    4300028: pasted__pCube1
+    4300030: pasted__pCube2
+    4300032: pasted__pCube1
+    4300034: pasted__pCube2
+    4300036: pasted__pCube7
+    4300038: pasted__pCube8
+    4300040: pasted__pCube9
+    4300042: pasted__pCube10
+    4300044: pasted__pCube11
+    4300046: pasted__pCube1
+    4300048: pasted__pCube2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
