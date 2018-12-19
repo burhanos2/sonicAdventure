@@ -8,6 +8,8 @@ public class Pickup : MonoBehaviour {
     public Text RingsAmount;
     public int count;
     public AudioSource ringPick;
+
+    [SerializeField]
     private AudioClip pickSound;
 
 	// Use this for initialization
