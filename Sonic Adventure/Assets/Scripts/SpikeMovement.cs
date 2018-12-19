@@ -19,8 +19,8 @@ public class SpikeMovement : MonoBehaviour
     private void Start()
     {
         // Points where the spike is moving between
-        pointA = new Vector3(95.6f, 21.2f, 238.11f);
-        pointB = new Vector3(95.6f, 17.77f, 238.11f);
+        pointA = new Vector3(187.51f, 36.16f, 244.3f);
+        pointB = new Vector3(187.51f, 31.03f, 244.3f);
 
         StartCoroutine(Timer());
     }
