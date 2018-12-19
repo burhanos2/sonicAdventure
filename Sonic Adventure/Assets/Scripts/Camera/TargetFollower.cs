@@ -10,12 +10,12 @@ public class TargetFollower : MonoBehaviour
 
     [SerializeField]
     private Vector3 _offset;
-    public Vector3 Offset{ get; set; }
+    public Vector3 Offset { get { return _offset; } set { _offset = value; } }
 
 
-    private void Update()
+    public void FollowTargetInPos()
     {
-        followPlayer = _target.position + _offset;
+       transform.position = _target.position + _offset;
     }
 
     private void LateUpdate()

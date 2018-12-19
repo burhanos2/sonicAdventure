@@ -10,6 +10,8 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private float jumpForce = 2;
 
+    private float fallSpeed = 4f;
+
     private const float jumpTime = 1;
    
     private float jumpTimeCounter;
@@ -21,7 +23,7 @@ public class Jump : MonoBehaviour
 
     private GroundedCheck groundCheck;
 
-	private void Start ()
+	private void Awake ()
     {
         rb = this.GetComponent<Rigidbody>();
         groundCheck = GetComponent<GroundedCheck>();
@@ -30,6 +32,7 @@ public class Jump : MonoBehaviour
 	private void FixedUpdate ()
     {
         DoJump();
+        DoFall();
 	}
 
     private void ZeroVel()
@@ -64,6 +67,14 @@ public class Jump : MonoBehaviour
         if (Input.GetKeyUp(jumpKey))
         {
             isJumping = false;
+        }
+    }
+
+    private void DoFall()
+    {
+        if (!groundCheck.Grounded && !isJumping)
+        {
+            rb.AddForce(rb.velocity.x, -jumpForce, rb.velocity.z);
         }
     }
 }

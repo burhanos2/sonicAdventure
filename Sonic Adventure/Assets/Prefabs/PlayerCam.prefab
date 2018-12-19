@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 20712642388361904}
   - component: {fileID: 81507226250457070}
   - component: {fileID: 114463050833100454}
+  - component: {fileID: 114165143743327586}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: MainCamera
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1951313964896068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.24818268, y: 0, z: 0, w: 0.9687133}
+  m_LocalPosition: {x: -1.37, y: 1.81, z: -3.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 28.74, y: 0, z: 0}
 --- !u!20 &20712642388361904
 Camera:
   m_ObjectHideFlags: 1
@@ -89,6 +90,23 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1951313964896068}
   m_Enabled: 1
+--- !u!114 &114165143743327586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951313964896068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20258fbbabb845498c6f2ceea12c622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPoses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114463050833100454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,4 +120,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
   _offset: {x: 2, y: 3, z: -3}
-  _rotationOffset: {x: 3, y: 0, z: 0, w: 0}

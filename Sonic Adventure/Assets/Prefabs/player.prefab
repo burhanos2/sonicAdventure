@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4810063486219196}
   - component: {fileID: 54441337761082176}
   - component: {fileID: 65795316640856738}
+  - component: {fileID: 114674965328034000}
   - component: {fileID: 114283088426655110}
   - component: {fileID: 114508234539851974}
   - component: {fileID: 114399000225699552}
@@ -594,7 +595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RingsAmount: {fileID: 0}
   count: 0
-  RingPick: {fileID: 0}
+  ringPick: {fileID: 0}
+  pickSound: {fileID: 8300000, guid: d54b31edfaf62504883189855830a683, type: 3}
 --- !u!114 &114283088426655110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8721b5e71441bbb44b65e9e98bf3bee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vectorOffset: {x: 0, y: 0, z: 0.12}
 --- !u!114 &114399000225699552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -630,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10b39888dd2e4a4c8e647d56102765e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vectorOffset: {x: 0, y: 0, z: 0.12}
 --- !u!114 &114508234539851974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -643,3 +647,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpKey: 32
   jumpForce: 4
+--- !u!114 &114674965328034000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1172519062545966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20258fbbabb845498c6f2ceea12c622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}

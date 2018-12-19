@@ -14,5 +14,9 @@ public class PlayerRotate : GroundedCheck {
             Quaternion rotate = Quaternion.FromToRotation(Vector3.up, ray.normal);
             transform.rotation = Quaternion.Lerp(transform.rotation, rotate, Time.time * 1);
         }
+        else
+        {
+            transform.rotation = new Quaternion(0,0,0,0);
+        }
     }
 }
