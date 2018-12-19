@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class RotatePointAmount : MonoBehaviour {
 
-    public short timesToRotate45Deg;
+    [Tooltip("The amount of times the player wil turn 45 degrees.")]
+    public short times;
 }

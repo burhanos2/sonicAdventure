@@ -8,12 +8,15 @@ public class TurningOnPoints : MonoBehaviour {
     {
         if (other.gameObject.tag == "RotatePoint")
         {
-            Rotate45Deg(other.gameObject.GetComponent<RotatePointAmount>().timesToRotate45Deg);
+            RotateIt(other.gameObject.GetComponent<RotatePointAmount>().times);
         }
     }
 
-
-    private void Rotate45Deg(int times)
+    /// <summary>
+    /// times is the amount of times it wil rotate 45 degrees
+    /// </summary>
+    /// <param name="times"></param>
+    private void RotateIt(int times)
     { transform.Rotate(Vector3.up * Time.deltaTime * 2250 * times, Space.Self); }
 
 }
