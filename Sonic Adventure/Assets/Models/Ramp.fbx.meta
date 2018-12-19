@@ -5,25 +5,12 @@ ModelImporter:
   fileIDToRecycleName:
     100000: JUMP1
     100002: //RootNode
-    100004: Slide
-    100006: Slide_walls
-    100008: Loop
     400000: JUMP1
     400002: //RootNode
-    400004: Slide
-    400006: Slide_walls
-    400008: Loop
     2100000: lambert1
-    2100002: lambert3
     2300000: JUMP1
-    2300002: Slide_walls
-    2300004: Loop
     3300000: JUMP1
-    3300002: Slide_walls
-    3300004: Loop
     4300000: JUMP1
-    4300002: Slide_walls
-    4300004: Loop
   externalObjects: {}
   materials:
     importMaterials: 1

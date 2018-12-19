@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: a2ebd45ceb2d29847a80c2b9e0a6537f
+guid: 1d6de33d7c8ae2340ad440ee4a3f1b40
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Loop
     100002: //RootNode
-    100004: Base_loop
-    100006: PathLoop
-    100008: transform1
     400000: Loop
     400002: //RootNode
-    400004: Base_loop
-    400006: PathLoop
-    400008: transform1
     2100000: lambert3
     2300000: Loop
-    2300002: Base_loop
-    2300004: PathLoop
     3300000: Loop
-    3300002: Base_loop
-    3300004: PathLoop
     4300000: Loop
-    4300002: PathLoop
-    4300004: Base_loop
   externalObjects: {}
   materials:
     importMaterials: 1
