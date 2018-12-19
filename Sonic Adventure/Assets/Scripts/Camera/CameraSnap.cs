@@ -20,7 +20,7 @@ public class CameraSnap : MonoBehaviour
         if (other.gameObject.tag == "CameraTrigger")
         {
             _trigCount++;
-           cam.transform.position = other.gameObject.GetComponentInParent<Transform>().position;
+            cam.transform.position = other.transform.GetChild(0).position;
         }
     }
 
