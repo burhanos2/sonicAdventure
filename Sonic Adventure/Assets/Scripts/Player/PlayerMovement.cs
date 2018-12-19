@@ -28,21 +28,21 @@ public class PlayerMovement : MonoBehaviour {
 
     private void WaitForInput()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            rb.AddForce(Vector3.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
-        }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(-Vector3.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(-Vector3.right * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(-transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(Vector3.right * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(-transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
     }
 
