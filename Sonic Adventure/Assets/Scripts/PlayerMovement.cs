@@ -30,19 +30,19 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(this.transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(Vector3.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(-this.transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(-Vector3.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-this.transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(-Vector3.right * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(this.transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
+            rb.AddForce(Vector3.right * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
     }
 

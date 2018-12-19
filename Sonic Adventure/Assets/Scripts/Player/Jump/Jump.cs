@@ -8,9 +8,9 @@ public class Jump : MonoBehaviour
     private KeyCode jumpKey = KeyCode.Space;
 
     [SerializeField]
-    private float jumpForce = 2;
+    private float jumpForce;
 
-    private float fallSpeed = 4f;
+    private readonly float fallSpeed = 4f;
 
     private const float jumpTime = 1;
    
@@ -20,11 +20,14 @@ public class Jump : MonoBehaviour
     public bool Jumping { get { return isJumping; } }
 
     private Rigidbody rb;
-
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip audioClip;
     private GroundedCheck groundCheck;
 
 	private void Awake ()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = this.GetComponent<Rigidbody>();
         groundCheck = GetComponent<GroundedCheck>();
 	}
@@ -45,11 +48,12 @@ public class Jump : MonoBehaviour
 
         if (groundCheck.Grounded == true && Input.GetKeyDown(jumpKey))
         {
+            audioSource.PlayOneShot(audioClip);
             isJumping = true;
             jumpTimeCounter = jumpTime;
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce * 2f, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce * 5f, rb.velocity.z);
         }
-        else if (Input.GetKey(jumpKey) && isJumping == true)
+        if (Input.GetKey(jumpKey) && isJumping == true)
         {
 
             if (jumpTimeCounter > 0)
@@ -74,7 +78,7 @@ public class Jump : MonoBehaviour
     {
         if (!groundCheck.Grounded && !isJumping)
         {
-            rb.AddForce(rb.velocity.x, -jumpForce, rb.velocity.z);
+            rb.AddForce(0, -fallSpeed * 4, 0);
         }
     }
 }
