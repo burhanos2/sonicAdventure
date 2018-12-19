@@ -7,10 +7,11 @@ public class PlayerDamage : MonoBehaviour
     private Pickup pickup;
     private SceneHandler sceneHandler;
     public GameObject managerObject;
-
-    private bool invinstime = true;
+    private PlayerAnims playerAnimations;
     public Collider playerCollider;
     public Collider spikecol;
+
+    private bool invinstime = true;
     private float timer3 = 2;
 
     private void Awake()
@@ -18,12 +19,14 @@ public class PlayerDamage : MonoBehaviour
         pickup = GetComponent<Pickup>();
         playerRB = GetComponent<Rigidbody>();
         sceneHandler = managerObject.GetComponent<SceneHandler>();
+        playerAnimations = GetComponent<PlayerAnims>();
     }
 
     void OnDamage(float horizontalKB, float verticalKB)
     {
         //LoseRings(pickup.count);
         Ringloss();
+        playerAnimations.DamageAnimation();
         AddKnockback(playerRB, horizontalKB, verticalKB);
     }
 
