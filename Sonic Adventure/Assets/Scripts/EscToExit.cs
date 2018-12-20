@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EscToExit : MonoBehaviour {
+public class EscToExit : MonoBehaviour
+{
 
-    void update()
+    private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             Application.Quit();
         }
     }
+      
+    
 
 }
