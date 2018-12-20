@@ -12,7 +12,7 @@ public class CameraSnap : MonoBehaviour
     private void Start()
     {
         _trigCount = 0;
-        tfollow = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TargetFollower>();
+        tfollow = cam.GetComponent<TargetFollower>();
     }
 
     private void OnTriggerEnter(Collider other)

@@ -1008,7 +1008,7 @@ Prefab:
         type: 2}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 95215145}
+      objectReference: {fileID: 168545224}
     - target: {fileID: 114287429636207998, guid: d4ea08bbc804cff44b7a41f8e1ae27d4,
         type: 2}
       propertyPath: blackImage
@@ -1454,6 +1454,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 462a0c0607752bc47aa3239a0ed09489, type: 2}
   m_IsPrefabAsset: 0
+--- !u!95 &168545224 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95351239801753138, guid: 462a0c0607752bc47aa3239a0ed09489,
+    type: 2}
+  m_PrefabInternal: {fileID: 168545223}
 --- !u!1 &176055383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100238, guid: 4a43a6809ca73e240b9535063419d7de,
