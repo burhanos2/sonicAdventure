@@ -29,6 +29,6 @@ public class Timer : MonoBehaviour {
 
         miliseconds += Time.deltaTime * 100;
 
-        time.text = string.Format ("time: {0}:{1}:{2}", minutes, seconds, (int)miliseconds);
+        time.text = string.Format ("{0}:{1}:{2}", minutes, seconds, (int)miliseconds);
     }
 }
