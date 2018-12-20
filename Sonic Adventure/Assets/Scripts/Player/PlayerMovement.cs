@@ -28,19 +28,19 @@ public class PlayerMovement : MonoBehaviour {
 
     private void WaitForInput()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.S))
         {
             rb.AddForce(-transform.forward * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
             rb.AddForce(-transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             rb.AddForce(transform.right * movementSpeed * speedModifier, ForceMode.Acceleration);
         }

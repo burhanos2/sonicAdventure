@@ -1196,6 +1196,8 @@ GameObject:
   - component: {fileID: 114597886016838394}
   - component: {fileID: 114696647662005700}
   - component: {fileID: 82197574757070214}
+  - component: {fileID: 114798441068692454}
+  - component: {fileID: 114376658739175104}
   m_Layer: 0
   m_Name: Sonic_final
   m_TagString: Player
@@ -2109,8 +2111,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379459326219836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6360699, y: 1.7000653, z: -6.916612}
-  m_LocalScale: {x: 1.2928247, y: 1.2928247, z: 1.2928247}
+  m_LocalPosition: {x: 0.63606864, y: 2.39, z: -6.916606}
+  m_LocalScale: {x: 1.2928288, y: 1.2928255, z: 1.2928281}
   m_Children: []
   m_Father: {fileID: 4774795909635762}
   m_RootOrder: 4
@@ -2490,9 +2492,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771574493568830}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7735, y: 0.7735, z: 0.7735}
+  m_LocalRotation: {x: 0.0025296146, y: 0.9997748, z: 0.000079535894, w: -0.02107152}
+  m_LocalPosition: {x: 187.26915, y: 29.910046, z: 251.43532}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4905555313706514}
   - {fileID: 4625059062642378}
@@ -2501,7 +2503,7 @@ Transform:
   - {fileID: 4552960221830814}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.015000001, y: 182.415, z: 0.29000002}
 --- !u!4 &4775151817542300
 Transform:
   m_ObjectHideFlags: 1
@@ -3100,6 +3102,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vectorOffset: {x: 0, y: 0.6, z: 0.12}
+--- !u!114 &114376658739175104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771574493568830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20258fbbabb845498c6f2ceea12c622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1379459326219836}
 --- !u!114 &114377010684450496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3112,7 +3126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 4774795909635762}
-  _offset: {x: 4.2, y: -0.4, z: -3}
+  _offset: {x: -1.33, y: 4.83, z: 9.07}
 --- !u!114 &114446739874460340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3156,6 +3170,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonicAnimator: {fileID: 95682401501751738}
   damageState: 0
+--- !u!114 &114798441068692454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771574493568830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498a41a158a1da74cae6f3d0d3e9868d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114812868713831700
 MonoBehaviour:
   m_ObjectHideFlags: 1
