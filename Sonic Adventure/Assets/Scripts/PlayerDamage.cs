@@ -28,6 +28,7 @@ public class PlayerDamage : MonoBehaviour
         //LoseRings(pickup.count);
         Ringloss();
         playerAnimations.DamageAnimation();
+        playerRB.velocity = Vector3.zero;
         AddKnockback(playerRB, horizontalKB, verticalKB);
     }
 
@@ -35,10 +36,9 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Spike")
         {
-          playerRB.velocity = Vector3.zero;
           invinstime = false;
           Physics.IgnoreCollision(playerCollider, spikecol, ignore: true);
-          OnDamage(-2, 2);
+            OnDamage(-2, 2);
         }
 
         if (other.gameObject.tag == "Water")

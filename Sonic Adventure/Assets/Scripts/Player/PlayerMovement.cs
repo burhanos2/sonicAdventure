@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public Rigidbody rb;
 
-    private float maxSpeed = 3f;
+    private float maxSpeed = 2.7f;
     public float movementSpeed;
     private float stopSpeed = 3.5f;
-    private float speedModifier = 6;
+    private float speedModifier = 6.1f;
 
     private void Update()
     {
