@@ -8,7 +8,7 @@ public class Booster : MonoBehaviour {
     public Transform player;
     public AudioSource audioFile;
 
-    private readonly float boostPower = 1;
+    private readonly float boostPower = 0.8f;
 
     private void Awake()
     {

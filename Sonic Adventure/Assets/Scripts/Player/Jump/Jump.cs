@@ -10,7 +10,7 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private float jumpForce;
 
-    private readonly float fallSpeed = 4f;
+    private readonly float fallSpeed = 0.1f;
 
     private const float jumpTime = 1;
    
@@ -78,7 +78,7 @@ public class Jump : MonoBehaviour
     {
         if (!groundCheck.Grounded && !isJumping)
         {
-            rb.AddForce(0, -fallSpeed * 4, 0);
+            rb.AddForce(0, -fallSpeed *1, 0, ForceMode.Impulse);
         }
     }
 }

@@ -26,10 +26,13 @@ public class CameraSnap : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.tag == "CameraTrigger")
+        { 
         _trigCount--;
+        }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (_trigCount == 0)
         { tfollow.FollowTargetInPos(); }

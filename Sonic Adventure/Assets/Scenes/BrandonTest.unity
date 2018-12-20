@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -196,7 +196,7 @@ Transform:
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &197077322 stripped
 BoxCollider:
@@ -229,7 +229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405005041
 GameObject:
@@ -346,6 +346,7 @@ MonoBehaviour:
   managerObject: {fileID: 0}
   playerCollider: {fileID: 409372838}
   spikecol: {fileID: 197077322}
+  invinstime: 1
 --- !u!65 &409372838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -406,11 +407,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409372836}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.806, y: -3, z: -2.76}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.5447817, y: -37.443085, z: -868.3052}
+  m_LocalScale: {x: 9.360771, y: 9.360771, z: 9.360771}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 538318347}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &409372842
@@ -442,6 +443,7 @@ MonoBehaviour:
   RingsAmount: {fileID: 1003387404}
   count: 0
   ringPick: {fileID: 409372845}
+  pickSound: {fileID: 0}
 --- !u!114 &409372844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,6 +669,7 @@ MonoBehaviour:
   RingsAmount: {fileID: 0}
   count: 0
   ringPick: {fileID: 0}
+  pickSound: {fileID: 0}
 --- !u!114 &810522089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &884387587
 Prefab:
@@ -907,7 +910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &989331479
 Rigidbody:
@@ -1041,7 +1044,7 @@ Prefab:
     - target: {fileID: 224682311281088884, guid: 462a0c0607752bc47aa3239a0ed09489,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224682311281088884, guid: 462a0c0607752bc47aa3239a0ed09489,
         type: 2}
@@ -1179,6 +1182,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224646733853566132, guid: 462a0c0607752bc47aa3239a0ed09489,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 462a0c0607752bc47aa3239a0ed09489, type: 2}
   m_IsPrefabAsset: 0
@@ -1294,7 +1302,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c091238826109554e83ae2cb904cd01c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa304f1402e2af84dbe35abdacc88094, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1346,7 +1354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4799810113485352, guid: 9f341100da00e144c8e8a34c07b3a108, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f341100da00e144c8e8a34c07b3a108, type: 2}
@@ -1434,7 +1442,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4799582567072762, guid: 564abf99befd5844fa579e92688c7c7e, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 564abf99befd5844fa579e92688c7c7e, type: 2}
@@ -1499,5 +1507,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
