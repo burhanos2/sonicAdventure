@@ -1,6 +1,7 @@
-#Vertical slice Deel 1
+#Vertical slice Part 1
 
-Gekozen game: Sonic adventure
+Chosen game to remake(10 sec): Sonic adventure
+clip to remake: https://www.youtube.com/watch?v=yk121puS6iI&feature=youtu.be&t=111
 
 Devs:
 Sem
